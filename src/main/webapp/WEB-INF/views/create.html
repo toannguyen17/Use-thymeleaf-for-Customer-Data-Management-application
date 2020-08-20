@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+</head>
+<body>
+<h1>Tạo khách hàng</h1>
+<a th:href="@{/}">Quay lại danh sách khách hàng</a>
+<div th:if="${success}">Tạo mới thành công.</div>
+<form th:action="@{/create}" method="post">
+    <table>
+        <tr>
+            <td>Tên</td>
+            <td><input type="text" name="name" /></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="text" name="email" /></td>
+        </tr>
+    </table>
+    <button type="submit">Tạo</button>
+</form>
+</body>
+</html>

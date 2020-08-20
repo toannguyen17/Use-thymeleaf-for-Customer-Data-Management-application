@@ -1,0 +1,18 @@
+customermanager/models/Customer.java
+ customermanager.models.Customer
+customermanager/controller/DeleteController.java
+ customermanager.controller.DeleteController
+customermanager/config/AppConfig.java
+ customermanager.config.AppConfig
+customermanager/services/CustomerService.java
+ customermanager.services.CustomerService
+customermanager/controller/CreateController.java
+ customermanager.controller.CreateController
+customermanager/controller/UpdateController.java
+ customermanager.controller.UpdateController
+customermanager/AppInit.java
+ customermanager.AppInit
+customermanager/services/Service.java
+ customermanager.services.Service
+customermanager/controller/HomeController.java
+ customermanager.controller.HomeController

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete</title>
+</head>
+<body>
+<h1>Xóa khách hàng</h1>
+<a th:href="@{/}">Quay lại danh sách khách hàng</a>
+<br>
+Xác nhận xóa khách hàng
+<form th:action="@{/delete(id=${customer.getId()})}" method="post">
+    <button type="submit">Xóa</button>
+</form>
+</body>
+</html>

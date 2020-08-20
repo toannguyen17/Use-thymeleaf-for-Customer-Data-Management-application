@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+</head>
+<body>
+<h1>Cập nhật thông tin khách hàng</h1>
+<a th:href="@{/}">Quay lại danh sách khách hàng</a>
+<div th:if="${success}">Lưu thành công.</div>
+<form th:action="@{/update(id=${customer.getId()})}" th:object="${customer}" method="post">
+    <table>
+        <tr>
+            <td>Tên</td>
+            <td><input type="text" th:field="*{name}"/></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="text" th:field="*{email}" /></td>
+        </tr>
+    </table>
+    <button type="submit">Lưu</button>
+</form>
+</body>
+</html>
